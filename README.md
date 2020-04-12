@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# TitanHacksSubmission
+>>>>>>> 21b22e8272b69f6859af19a41cd294ea7b3d9b61

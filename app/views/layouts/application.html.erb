@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | CV Tutoring</title>
+     <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    	<link href="https://fonts.googleapis.com/css?family=Signika|Ubuntu|Quicksand|Lato|Arimo|Cabin" rel="stylesheet">
+<script src="jquery-3.3.1.min.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+      <%= favicon_link_tag asset_path('favicon (2).ico') %>
+
+
+  </head>
+  <body>
+
+     <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%=yield%>
+  </body>
+</html>

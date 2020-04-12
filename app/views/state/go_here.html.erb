@@ -1,0 +1,29 @@
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<head>
+    <title>Statistis</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika|Ubuntu|Quicksand|Lato|Arimo|Cabin" rel="stylesheet">
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body id="body">
+    <div class="container">
+        <h1 id="mainTitle"><%= link_to "GO HOME", root_path, class: 'linkHome' %></h1>
+        <p id="FirstP">COVID-19 Statistics</p>
+    </div>
+    
+    
+    <div class="large_content">
+      <h1>Import From Excel</h1>
+    </div>
+    
+    <center>
+    <form enctype="multipart/form-data" action="/import_from_excel" accept-charset="UTF-8" method="post">
+        <input name="utf8" type="hidden" value="&#x2713;"/>
+        <input type="hidden" name="authenticity_token" value="Xr5quy0eOUZXFNewNOTvN1557aBD2muQwPH3GNUFihV8BL5WBO1jW3aeA4qJF3RAgkloUZtNlfxOwuoWQpX6cw==" />
+        <input type="file" name="file" id="file" class="animatedbutton" />
+        <input type="submit" name="commit" value="Import" class="btn btn-primary" data-disable-with="Import" />
+    </form>
+    
+</body>
+
+
